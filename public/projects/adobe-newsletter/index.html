@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <!-- start favicon-->
+        <link rel="icon" type="image/png" href="https://files.catbox.moe/49mjh5.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://files.catbox.moe/49mjh5.png" sizes="16x16" />
+        <!-- end favicon -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+
+                /* desktop */
+            @media only screen and (min-width: 960px){
+                .container{
+                width: 960px;
+                }
+
+                /* row - we thank you */
+                .thankyou .thankyou-text{
+                    padding-left: 20px;
+                    padding-right: 80px;
+                    padding-bottom: 0px;
+                }
+                .thankyou .thankyou-text h3{
+                    padding-left: 0px;
+                }
+                .handshake-container .handshake{
+                    width: 70% !important;
+                    padding-bottom: 5px;
+                }
+                /* row - knowledge base */
+                .knowledge-base h2{
+                    padding-left: 5px;
+                    width: 200px;
+                }
+                .white-paper-text h4{
+                    padding-left: 30px;
+                    
+                }
+                .white-paper-text p{
+                    padding-left: 30px;
+                    padding-right: 20px;
+                }
+                .white-paper-text .download-button{
+                    margin-left: 30px;
+                }
+                /* row - webinar recordings */
+                .bob-text h2{
+                    padding-left: 15px;
+                }
+                .bob-text h4{
+                    padding-left: 15px;
+                }
+                .bob-text p{
+                    padding-left: 15px;
+                }
+                .bob-text .watch-button{
+                    margin-left: 15px;
+                }
+                /* row - wiztips */
+                .wiztips-text p{
+                    padding-left: 10px;
+                }
+                .wiztips-text img{
+                    padding-left: 50px;
+                    width: 300px !important;
+                    max-width: 100%;
+                }
+                /* row - explore more */
+                .explore-text .explore-title{
+                    padding-left: 5px;
+                }
+                .explore-content .daily{
+                    padding-right: 40px;
+                    padding-left: 80px;
+                }
+                .explore-content .usercommunity{
+                    padding-right: 20px;
+                    padding-left: 25px;
+                }
+                .explore-content .adobeconnect{
+                    padding-right: 25px;
+                    padding-left: 30px;
+                }
+                .explore-content .email{
+                    padding-right: 0px;
+                    padding-left: 0px;
+                }            
+                /* row - adobe logo grey background */
+                .icons-content .adobe-icon{
+                    margin-left: 15px !important;
+                    display: inline-block;
+                }
+
+                .icons-content .linked-icon{
+                    padding-left: 550px;
+                    padding-right: 0px;
+                    vertical-align: top !important;
+                    display: inline-block;
+                    max-width: 100%; 
+                    width: 40px;
+                }
+                .icons-content .twit-icon{
+                    padding-left: 0;
+                    padding-right: 0px;
+                    vertical-align: top !important;
+                    display: inline-block;
+                    max-width: 100%; 
+                    width: 40px;
+                }
+                .icons-content .face-icon{
+                    padding-left: 0;
+                    padding-right: 0px;
+                    vertical-align: top !important;
+                    display: inline-block;
+                    max-width: 100%; 
+                    width: 40px;
+                }
+                .icons-content .you-icon{
+                    padding-left: 0;
+                    padding-right: 0px;
+                    vertical-align: top !important;
+                    display: inline-block;
+                    max-width: 100%; 
+                    width: 40px;
+                }
+                .text-container .adobe-text{
+                    width: 860px;
+                    margin-left: 10px;
+                    margin-right: 20px;
+                }
+            }
+
+            /* mid size */
+            @media only screen and (max-width: 960px){
+                .container{
+                width: 600px;
+                }
+                /* row - explore more */
+                .explore-text p{
+                    margin-left: 0px;
+                }
+                .explore-content .daily{
+                    padding-right: 5px;
+                    padding-left: 0px;
+                }
+                .explore-content .usercommunity{
+                    padding-right: 0px;
+                    padding-left: 10px !important;
+                }
+                .explore-content .adobeconnect{
+                    padding-right: 0px;
+                    padding-left: 18px;
+                }
+                .explore-content .email{
+                    padding-right: 0px;
+                    padding-left: 0px;
+                }
+                /* row - adobe logo grey background */
+                .icons-content .adobe-icon{
+                    margin-left: 15px !important;
+                    display: inline-block;
+                }
+
+                .icons-content .linked-icon{
+                    padding-left: 180px;
+                    padding-right: 0px;
+                    vertical-align: top !important;
+                    display: inline-block;
+                    max-width: 100%; 
+                    width: 40px;
+                }
+                .icons-content .twit-icon{
+                    padding-left: 0;
+                    padding-right: 0px;
+                    vertical-align: top !important;
+                    display: inline-block;
+                    max-width: 100%; 
+                    width: 40px;
+                }
+                .icons-content .face-icon{
+                    padding-left: 0;
+                    padding-right: 0px;
+                    vertical-align: top !important;
+                    display: inline-block;
+                    max-width: 100%; 
+                    width: 40px;
+                }
+                .icons-content .you-icon{
+                    padding-left: 0;
+                    padding-right: 0px;
+                    vertical-align: top !important;
+                    display: inline-block;
+                    max-width: 100%; 
+                    width: 40px;
+                }
+                .text-container .adobe-text{
+                    width: 500px;
+                    margin-left: 10px;
+                    margin-right: 20px;
+                }
+            }
+        
+            /* mobile */
+            
+            @media only screen and (max-width: 600px){
+                .container{
+                width: 100%;
+                }
+                /* row - we thank you */
+                .inside-thankyou .thankyou{
+                    width: 80%;
+                    display: block !important;
+                }
+                .thankyou .thankyou-text{
+                    display: block;
+                }
+                .handshake-container img{
+                    width: 250px !important;
+                    max-width: 100% !important;
+                    display: block !important;
+                    padding-bottom: 15px;
+                }
+                /* row - knowledge base */
+                .knowledge-base img{
+                    margin-bottom: 0px !important;
+                }
+
+                .inside-knowledge .knowledge-base{
+                    padding-left: 20px !important;
+                    display: block;
+                    width: 100%;
+                    align-items: left;
+                }
+                .inside-knowledge .white-paper-text{
+                    display: block;
+                    width: 100%;
+                    padding-left: 15px !important;
+                    align-items: left;
+                }
+                .inside-knowledge .white-paper-text h4{
+                    display: block;
+                    width: 90%;
+                    padding-left: 10px !important;
+                    text-align: left;
+                }
+                .inside-knowledge p{
+                    width: 80%;
+                    padding-left: 10px !important;
+                }
+                .inside-knowledge .white-paper-text a{
+                    margin-left: 10px !important;
+                }
+                /* row - webinar recordings */
+
+                .bob-column img{
+                    display: block;
+                    width: 100%;
+                    padding-left: 0px !important;
+                    text-align: left;
+                }
+                .bob-column{
+                    display: block;
+                    width: 100%;
+                    padding-left: 0px !important;
+                    text-align: left;
+                }
+                .inside-webinar .bob-text{
+                    display: block;
+                    width: 100%;
+                    padding-left: 20px !important;
+                    padding-bottom: 10px;
+                }
+                .inside-webinar .bob-text h2{
+                    display: block;
+                    width: 90%;
+                    padding-left: 10px !important;
+                    padding-bottom: 10px;
+                }
+                .inside-webinar .bob-text h4{
+                    display: block;
+                    width: 90%;
+                    padding-left: 10px !important;
+                    padding-bottom: 10px;
+                }
+                .inside-webinar .bob-text p{
+                    display: block;
+                    width: 85%;
+                    padding-left: 10px !important;
+                    padding-bottom: 10px;
+                }
+                .inside-webinar .bob-text a{
+                    margin-left: 10px !important;
+                }
+                .bob-column p{
+                    width: 200px;
+                    text-align: center;
+                    margin-left: 25px !important;
+                }
+                .bob-column img{
+                    width: 60%;
+                    margin-left: 15px !important;
+                }
+                /* row - wiztips */
+                .inside-wiztips .wiztips-text{
+
+                    padding-left: 20px !important;
+                    padding-right: 10px;
+                }
+                
+                .inside-wiztips .wiztips-text img{
+                    display: block;
+                    padding-left: 12px !important;
+                }
+                .inside-wiztips .wiztips-text h2{
+                    width: 30%;
+                    margin-left: 10px !important;
+                    margin-right: 10px !important;
+                    padding-left: 0px !important;
+                    text-align: left;
+                }
+                /* row - explore more*/
+                .explore-content .daily{
+                    padding-right: 0px;
+                    padding-left: 0px;
+                }
+                .explore-content .usercommunity{
+                    padding-right: 0px;
+                    padding-left: 0px;
+                }
+                .explore-content .adobeconnect{
+                    padding-right: 0px;
+                    padding-left: 0px;
+                }
+                .explore-content .email{
+                    padding-right: 0px;
+                    padding-left: 0px;
+                }
+                /* row - adobe logo grey background */
+
+                .icons-content .adobe-icon{
+                    margin-left: 15px !important;
+                    display: inline-block;
+                }
+
+                .icons-content .linked-icon{
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    vertical-align: top !important;
+                    display: inline-block;
+                    max-width: 100%; 
+                    width: 40px;
+                }
+                .icons-content .twit-icon{
+                    padding-left: 0;
+                    padding-right: 0px;
+                    vertical-align: top !important;
+                    display: inline-block;
+                    max-width: 100%; 
+                    width: 40px;
+                }
+                .icons-content .face-icon{
+                    padding-left: 0;
+                    padding-right: 0px;
+                    vertical-align: top !important;
+                    display: inline-block;
+                    max-width: 100%; 
+                    width: 40px;
+                }
+                .icons-content .you-icon{
+                    padding-left: 0;
+                    padding-right: 0px;
+                    vertical-align: top !important;
+                    display: inline-block;
+                    max-width: 100%; 
+                    width: 40px;
+                }
+                .text-container .adobe-text{
+                    width: 90%;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+
+            </style>
+
+            <!-- start Hotjar Tracking Code -->
+            <script>
+            (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2967803,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            </script>
+            <!-- end Hotjar Tracking Code -->
+    
+    </head>
+
+
+    <body style="background-color: transparent;">
+        <!-- Start of html email -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    <!-- start of container -->
+                    <table class="container" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+                        <!-- start row 1 -->
+                        <tr>
+                            <td>
+                                <table class="header-row" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td style="background-color: transparent;">
+                                            <img class="image" src="https://files.catbox.moe/t939hd.jpg" alt="header turkey photo" width="100%" style="display: block;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end row 1 -->
+                        <!-- start row 2 -->
+                        <tr>
+                            <td>
+                                <table class="outside-thankyou" border="0" cellspacing="0" cellpadding="0" style="display: block; background-color: #009999; padding: 15px 15px;">
+                                    <tr>
+                                        <td>
+                                            <table class="inside-thankyou" style="border: 5px solid #cafff5;">
+                                                <tr>
+                                                    <td>
+                                                        <table class="thankyou" style="font-size:16px;line-height: 1.6em;font-family:Arial,Helvetica,sans-serif; background-color: #009999; color:#ffffff; text-align: left; margin-top: 5px; margin-left: 12px;">
+                                                            <tr>
+                                                                <td class="thankyou-text">  
+                                                                    <strong>We thank you</strong> <br>
+                                                                    for your unwavering support that has always <br> inspired us to create better experiences and leap into a brighter future.              
+                                                                    <h3 class="thankyou-text">Happy Thanksgiving!</h3>
+                                                                </td>
+                                                                <td class="handshake-container" style="display: block;">
+                                                                    <img class="handshake" src="https://files.catbox.moe/mrkz5d.png" alt="shaking hands" style="max-width: 100%; width: 290px;">
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end row 2 -->
+                        <!-- start row 3 -->
+                        <tr>
+                            <td>
+                                <table class="outside-knowledge" width="100%" border="0" cellspacing="0" cellpadding="0" style="display: block; background-color: #ffffff; border-top: 15px solid #66cccc; border-left: 15px solid #66cccc; border-right: 15px solid #66cccc; border-bottom: 15px solid #66cccc;">
+                                    <tr>
+                                        <td>
+                                            <table class="inside-knowledge">
+                                                <tr class="orange-row">
+                                                    <img class="orange-bar" align="top" src="https://files.catbox.moe/k9o9qb.png" alt="orange band" style="max-width: 100%; width: 350px; border-top: 20px #66cccc;">
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td class="knowledge-base" align="left" style="font-size:16px;line-height: 1.5em;font-family:Arial,Helvetica,sans-serif; color: #403f41; padding-left: 25px;">
+                                                                    <h2>Knowledge Base</h2>
+                                                                    <img class="knowledge-image" src="https://files.catbox.moe/apnhqa.png" alt="knowledge man wave laptop" style="max-width: 100%;width: 220px; margin-bottom: 30px;">
+                                                                </td>
+                                                                <td class="white-paper-text" align="left" style="font-size:15px;line-height: 1.6em;font-family:Arial,Helvetica,sans-serif; color: #403f41; text-align: left; padding-left: 20px; padding-bottom: 10px;">
+                                                                <h4>Whitepaper - Accessibility considerations in the world of online training & learning</h4>
+                                                                <p>Adhering to legal protocols of accessible design is good, but not good enough to create a truly accessible experience. Check out these accessibility considerations to create more inclusive virtual sessions.</p>
+                                                                <span style="display: block; margin-top: 10px; margin-bottom: 5px;">
+                                                                    <a class="watch-button" href="#" style="background-color: #3273dc;color: #ffffff;font-size: 18px;line-height: 35px;text-align:center;text-decoration:none;border-bottom:5px;display: block;font-weight:normal;border-radius: 26px; width: 160px; height: 35px; max-width: 100%; ">Download Now</a>
+                                                                </span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end row 3-->
+                        <!-- start row 4 -->
+                        <tr>
+                            <td>
+                                <table class="outside-webinar" width="100%" border="0" cellspacing="0" cellpadding="0" style="display: block; background-color: #ffffff; border-left: 15px solid #66cccc; border-right: 15px solid #66cccc; border-bottom: 15px solid #66cccc;">
+                                    <tr>
+                                        <td>
+                                            <table class="inside-webinar">
+                                                <tr class="orange-row">
+                                                    <img class="orange-bar" align="top" src="https://files.catbox.moe/k9o9qb.png" alt="orange band" style="max-width: 100%; width: 350px; border-top: 20px #66cccc;">
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td class="bob-text" width="50%" align="left" style="font-size:15px;line-height: 1.6em;font-family:Arial,Helvetica,sans-serif; color: #403f41; text-align: left; padding-left: 20px;">
+                                                                <h2>Webinar Recordings</h2>
+                                                                <h4>Driving Engagement For Successful Learning And Retention</h4>
+                                                                <p class="virtual">Is it important for your virtual sessions to have a lot of attendees, or to ensure every attendee is equally engaged? If it is the latter, you must watch this recorded webinar on driving engaging virtual sessions by Bob Kennedy.</p>
+                                                                    <span style="display: block; margin-top: 10px; margin-bottom: 5px;">
+                                                                        <a class="watch-button" href="#" style="background-color: #3273dc;color: #ffffff;font-size: 18px;line-height: 35px;text-align:center;text-decoration:none;border-bottom:5px;display: block;font-weight:normal;border-radius: 26px; width: 160px; height: 35px; max-width: 100%; ">Watch Now</a>
+                                                                    </span>
+                                                                </td>
+                                                                <td class="bob-column" align="center" width="50%" style="font-size:16px;line-height: 1.5em;font-family:Arial,Helvetica,sans-serif; color: #403f41; padding-left: 20px;">
+                                                                    <img class="bob-image" src="https://files.catbox.moe/axzrv3.png" alt="bob kennedy photo" style="max-width: 100%;width: 220px; margin-bottom: 20px;">
+                                                                    <p><strong>Bob Kennedy</strong><br> Sr. Learning Technology<br>Consultant Transamerica</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end row 4-->                      
+                        <!-- start row 5 -->
+                        <tr>
+                            <td>
+                                <table class="outside-wiztips" width="100%" border="0" cellspacing="0" cellpadding="0" style="display: block; background-color: #ffffff; border-left: 15px solid #66cccc; border-right: 15px solid #66cccc; border-bottom: 15px solid #66cccc;">
+                                    <tr>
+                                        <td>
+                                            <table class="inside-wiztips">
+                                                <tr class="orange-row">
+                                                    <img class="orange-bar" align="top" src="https://files.catbox.moe/k9o9qb.png" alt="orange band" style="max-width: 100%; width: 350px; border-top: 20px #66cccc;">
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td class="wiztips-text" align="left" style="font-family:Arial,Helvetica,sans-serif; color: #403f41; font-weight: 800; font-size: 23px; padding-left: 25px;">
+                                                                    <p>
+                                                                    #WiztipsByAdobeConnect 
+                                                                    <br>
+                                                                    Bite-sized video. Wholesome learning.
+                                                                    </p>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td class="bob-column" align="center" style="font-size:16px;line-height: 1.5em;font-family:Arial,Helvetica,sans-serif; color: #403f41; padding-left: 10px; padding-right: 25px;">
+                                                                                <a href="#">   <img class="bob-image" src="https://files.catbox.moe/596x6w.png" alt="wiztip play icon 1" style="max-width: 100%;width: 220px; margin-bottom: 20px;"></a>
+                                                                            </td>
+                                                                            <td class="bob-column" align="center" style="font-size:16px;line-height: 1.5em;font-family:Arial,Helvetica,sans-serif; color: #403f41; padding-left: 20px; display: inline-block;">
+                                                                                <a href="#">   <img class="bob-image" src="https://files.catbox.moe/lht6nk.png" alt="wiztip play icon 2" style="max-width: 100%;width: 220px; margin-bottom: 20px;"></a>
+                                                                            </td>
+                                                                    
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end row 5--> 
+                        <!-- start row 6 -->
+                        <tr>
+                            <td>
+                                <table class="explore-container" width="100%" border="0" cellspacing="0" cellpadding="0" style="display: block; background-color: #ffffff; border-left: 15px solid #66cccc; border-right: 15px solid #66cccc; border-bottom: 30px solid #66cccc;">
+                                    <tr>
+                                        <td>
+                                            <table class="inside-wiztips">
+                                                <tr class="orange-row">
+                                                    <img class="orange-bar" align="top" src="https://files.catbox.moe/k9o9qb.png" alt="orange band" style="max-width: 100%; width: 350px; border-top: 20px #66cccc;">
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td class="explore-text" align="left" style="font-family:Arial,Helvetica,sans-serif; color: #403f41; font-weight: 800; font-size: 25px; padding-left: 30px;">
+                                                                    <p class="explore-title">
+                                                                    Explore More 
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>   
+                                                    </td> 
+                                                </tr>
+                                                <tr>
+                                                    <td align="left">
+                                                        <table class="explore-content" style="padding-left: 35px; padding-right: 20px; padding-bottom: 25px;">
+                                                            <tr>
+                                                                <td class="daily" align="middle" style="display: inline-block;">
+                                                                    <img class="icons" src="https://files.catbox.moe/10i39k.png" alt="newsletter icon 1 screen" style="max-width: 100%; width: 50px; display: inline-block;">
+                                                                    <a class="icons-text" href="" style="color: #403f41;font-size: 16px;text-align:center;font-family:Arial,Helvetica,sans-serif;background: #ffffff;line-height: 18px;font-weight: normal; text-decoration: none; display: block;">Daily Trainings</a>
+                                                                </td>   
+                                                                <td class="usercommunity" align="middle" style="display: inline-block; padding-left: 10px;">
+                                                                    <img class="icons" src="https://files.catbox.moe/901mda.png" alt="newsletter icon 2 message bubble" style="max-width: 100%; width: 50px; display: inline-block;">
+                                                                    <a class="icons-text" href="" style="color: #403f41;font-size: 16px;text-align:center;font-family:Arial,Helvetica,sans-serif;background: #ffffff;line-height: 18px;font-weight: normal; text-decoration: none; display: block;">User Community</a>
+                                                                </td>  
+                                                                <td class="adobeconnect" align="middle" style="display: inline-block;">
+                                                                    <img class="icons" src="https://files.catbox.moe/tovw5c.png" alt="newsletter icon 3 message globe" style="max-width: 100%; width: 50px; display: inline-block;">
+                                                                    <a class="icons-text" href="" style="color: #403f41;font-size: 16px;text-align:center;font-family:Arial,Helvetica,sans-serif;background: #ffffff;line-height: 18px;font-weight: normal; text-decoration: none; display: block;">Adobe Connect</a>
+                                                                </td> 
+                                                                <td class="email" align="middle" style="display: inline-block; padding-left: 35px;">
+                                                                    <img class="icons" src="https://files.catbox.moe/lrcyec.png" alt="newsletter icon 4 email" style="max-width: 100%; width: 50px; display: inline-block;">
+                                                                    <a class="icons-text" href="" style="color: #403f41;font-size: 16px;text-align:center;font-family:Arial,Helvetica,sans-serif;background: #ffffff;line-height: 18px;font-weight: normal; text-decoration: none; display: block;">Email</a>
+                                                                </td>                                                     
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end row 6--> 
+                        <!-- start row 7 -->
+                        <tr>
+                            <td width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 14px 0px 4px; background-color: #d6d7d7;">
+                                <table width="100%" style="background-color: #d6d7d7;">
+                                    <tr>
+                                        <td class="two-column" style="padding-left: 5px; padding-bottom: 5px;">
+                                            <table class="column" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="icons-content" style="display: inline-block; padding-left: 0px;">
+                                                        <a href=""><img class="adobe-icon" src="https://files.catbox.moe/w9hi98.png" alt="adobe logo" style="max-width:100%; width: 49px; margin-left: 10px; margin-right: 80px;"></a>
+                                                        <a href="#"><img class="linked-icon" src="https://files.catbox.moe/d3ahhi.jpg" alt="linkedin logo" style="width: 40px; max-width:100%;"></a>
+                                                        <a href=""><img class="twit-icon" src="https://files.catbox.moe/jpt9mq.jpg" alt="twitter logo" style="width: 40px; max-width:100%;"></a>
+                                                        <a href=""><img class="face-icon" src="https://files.catbox.moe/8cacxs.jpg" alt="facebook logo" style="width: 40px; max-width:100%;"></a>
+                                                        <a href=""><img class="you-icon" src="https://files.catbox.moe/af97jd.jpg" alt="youtube logo" style="width: 40px; max-width:100%;"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-container" style="color: #606060;font-size: 11px;text-align:left;font-family:Arial,Helvetica,sans-serif;background: #d6d7d7; padding-left: 15px; padding-right: 12px; padding-bottom: 15px;">
+                                                        <p class="adobe-text">
+                                                            <br>
+                                                            <br>
+                                                            Adobe, the Adobe logo and Adobe Connect are either registered trademarks or trademarks of Adobe in the United States and/or other countries. All other trademarks are the property of their respective owners.
+                                                            <br>
+                                                            <br>
+                                                            This is an advertising message from Adobe Inc., its affiliates, and agents ("Adobe"), 345 Park Avenue, San Jose, CA 95110 USA. If you prefer not to receive email like this from Adobe, 
+                                                            <a href="" style="text-decoration: none; color: #606060;"><u>click here</u></a>
+                                                            to unsubscribe or send an email to
+                                                            <a href="" style="text-decoration: none; color: #606060;"><u>unsubscribe-na@adobesystems.com</u></a>.
+                                                            Alternatively, you may mail your unsubscribe request to:
+                                                            <br>
+                                                            <br>
+                                                            UNSUBSCRIBE
+                                                            <br>
+                                                            Adobe Inc. Attn: Change of Address/Privacy, 343 Preston Street, Ottawa, ON K1S 1N4, Canada.
+                                                            <br>
+                                                            <br>
+                                                            Your privacy is important to us. Please review Adobe's 
+                                                            <a href="" style="text-decoration: none; color: #606060;"><u>Online Privacy Policy</u></a>.
+                                                            <br>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="column">
+                                                <tr>
+                                                </tr>
+                                           </table>
+                                        </td> 
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end row 7 -->
+                        
+                    </table>
+                    <!-- end of main container -->
+                </td>
+            </tr>
+        </table>
+    </body>
+    <!-- end of html email -->
+
+
+</html>

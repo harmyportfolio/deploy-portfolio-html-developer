@@ -1,0 +1,136 @@
+#skills-section{
+    padding: 80px 15px;
+}
+
+#skills-section .title{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#skills-section .title .circle{
+    background: #d4d4f9;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: .5rem;
+    top: 25px;
+}
+
+#skills-section .title h1{
+    position: relative;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #334455;
+    margin-left: .5rem;
+    z-index: 1;
+    letter-spacing: 4px;
+}
+
+#skills-section .skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+#skills-section .skills-container .box{
+    background: rgba(255, 255, 255, 0);
+    padding: 40px;
+    transition: all .4s ease-in-out;
+}
+
+#skills-section .skills-container .box:hover{
+    background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 40px 74px 24px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 40px 74px 24px rgba(0,0,0,0.08);
+    box-shadow: 0px 40px 74px 24px rgba(0,0,0,0.08);
+}
+
+#skills-section .skills-container .box img{
+    display: block;
+    margin: 0 auto;
+    max-height: 90px;  
+}
+
+#skills-section .skills-container .box h5{
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 1.2rem;
+    color: #16171b;
+}
+
+/* #skills-section .skills-container .box p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #b3b3b3;
+} */
+
+#skills-section .skills-container .box.blue{
+    border-bottom: 2px solid #52b8ff;
+}
+
+#skills-section .skills-container .box.red{
+    border-bottom: 2px solid #ff5253;
+}
+
+#skills-section .skills-container .box.yellow{
+    border-bottom: 2px solid #ffc853;
+}
+
+/* tablets */
+
+@media only screen and (max-width: 960px){
+    #skills-section .title .circle{
+        margin-left: 1rem;
+    }
+    
+    #skills-section .title h1{
+        margin-left: 1.2rem;
+    }
+    
+    #skills-section .skills-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+/* phones */
+
+@media only screen and (max-width: 767px){
+
+    #skills-section{
+        padding-bottom: 30px;
+    }
+
+
+    #skills-section .title .circle{
+        margin-left: 1rem;
+    }
+    
+    #skills-section .title h1{
+        margin-left: 1.2rem;
+    }
+      
+    #skills-section .skills-container .box{
+        
+        padding: 15px;
+        
+    }
+
+    #skills-section .skills-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px;
+    }
+    
+}

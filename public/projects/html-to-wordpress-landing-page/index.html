@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- start favicon-->
+		<link rel="icon" type="image/png" href="https://files.catbox.moe/49mjh5.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="https://files.catbox.moe/49mjh5.png" sizes="16x16" />
+		<!-- end favicon -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+		<title>HTML to Wordpress Landing Page</title>
+		<!-- Wordpress: add in front of style.css <?php echo get_bloginfo('template_directory'); ?>  -->
+		<link rel="stylesheet" href="styles.css">
+		<!-- Wordpress: add in front of script.js <?php echo get_bloginfo('template_directory'); ?>  -->
+		<script src="script.js" defer></script>
+		<!-- start Hotjar Tracking Code -->
+		<script>
+		(function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+		h._hjSettings={hjid:2967803,hjsv:6};
+		a=o.getElementsByTagName('head')[0];
+		r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+		a.appendChild(r);
+		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+		<!-- end Hotjar Tracking Code -->
+	</head>
+	<body>
+		<nav>
+			<div class="container">
+				<div class="flex">
+					<div class="img-wrapper">
+						<img src="https://files.catbox.moe/as90yz.svg" alt="company logo">
+					</div>
+
+					<button class="hamburger" id="hamburger">
+						<img class="open" src="https://files.catbox.moe/eawzb8.svg" alt="hamburger menu icon">
+						<img class="close" src="https://files.catbox.moe/javsxp.svg" alt="close x icon">
+					</button>
+
+					<ul id="menu">
+						<li><a href="#">How we work</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Account</a></li>
+						<li><a class="btn btn-reverse" href="#">View plans</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header>
+			<div class="container">
+				<div class="flex align-start reverse-mobile">
+					<div>
+						<h1 class="line-top">
+							Humanizing your insurance.
+						</h1>
+						<p>
+							Get your life insurance coverage easier and faster. We blend our
+							expertise and technology to help you find the plan that’s right
+							for you. Ensure you and your loved ones are protected.
+						</p>
+
+						<button class="btn">
+							View plans
+						</button>
+					</div>
+
+					<div>
+						<img src="https://files.catbox.moe/yy7nn2.jpg" alt="top photo family holding hands" class="family-hands">
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="container">
+			<h2 class="line-top line-violet">
+				We’re different
+			</h2>
+			<div class="flex">
+					<div class="tile">
+						<img src="https://files.catbox.moe/iez6le.svg" alt="snappy thunder icon">
+						<h3>
+							Snappy Process
+						</h3>
+						<p>
+							Our application process can be completed in minutes, not hours.
+							Don’t get stuck filling in tedious forms.
+						</p>
+					</div>
+	
+					<div class="tile">
+						<img src="https://files.catbox.moe/mndtsk.svg" alt="prices dollar icon">
+						<h3>
+							Affordable Prices
+						</h3>
+						<p>
+							We don’t want you worrying about high monthly costs. Our prices may
+							be low, but we still offer the best coverage possible.
+						</p>
+					</div>
+	
+					<div class="tile">
+						<img src="https://files.catbox.moe/gg66b0.svg" alt="people head icon">
+						<h3>
+							People First
+						</h3>
+						<p>
+							Our plans aren’t full of conditions and clauses to prevent payouts.
+							We make sure you’re covered when you need it.
+						</p>
+					</div>
+			</div>
+		</section>
+
+		<section class="container bg-violet">
+			<div class="flex">
+				<div>
+					<h2>
+						Find out more about how we work
+					</h2>
+				</div>
+
+				<button class="btn">
+					How we work
+				</button>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="flex border-bottom">
+					<div>
+						<img src="https://files.catbox.moe/as90yz.svg" alt="company logo">
+					</div>
+
+					<ul class="flex">
+						<li>
+							<a href="#">
+								<img src="https://files.catbox.moe/mlde8i.svg" alt="facebook logo">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="https://files.catbox.moe/ilj01c.svg" alt="twitter logo">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="https://files.catbox.moe/er5s62.svg" alt="pinterest logo">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="https://files.catbox.moe/dfleht.svg" alt="instagram logo">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="flex align-start">
+					<div>
+						<h4>Our company</h4>
+						<ul>
+							<li><a href="#">How we work</a></li>
+							<li><a href="#">Why Insure?</a></li>
+							<li><a href="#">View plans</a></li>
+							<li><a href="#">Reviews</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Help me</h4>
+						<ul>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Terms of use</a></li>
+							<li><a href="#">Privacy policy</a></li>
+							<li><a href="#">Cookies</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Contact</h4>
+						<ul>
+							<li><a href="#">Sales</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Live chat</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Others</h4>
+						<ul>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Licenses</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

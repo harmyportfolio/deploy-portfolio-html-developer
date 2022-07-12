@@ -1,0 +1,125 @@
+#portfolio-projects{
+    padding: 100px 15px;
+}
+
+#portfolio-projects .project-image{
+    width: 100%;
+
+}
+
+#portfolio-projects .project-image .img img{
+    
+}
+
+#portfolio-projects h1{
+    font-size: 4rem;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#portfolio-projects .info .buttons{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio-projects .info .buttons a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #6b70ee;
+    border: solid 2px #6b70ee;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#portfolio-projects .info .buttons a:hover{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ff0000;
+    border: solid 2px #ff0000;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#portfolio-projects .info .info-text{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio-projects p{
+    display: inline-block;
+    color: #676c7a;
+    font-size: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+
+.project-image .image-container .img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image .image-container .img img{
+    max-width: 50%;
+}
+
+@media only screen and (max-width: 960px){
+
+    #portfolio-projects h1{
+        font-size: 3rem;
+    }
+
+    #portfolio-projects p{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .project-image .image-container .img .dpd-thumbnail{
+        max-width: 100%;
+    }
+
+    .project-image .image-container .img .ebook-thumbnail{
+        max-width: 70%;
+    }
+
+    .project-image .image-container .img .wordpress-container{
+        max-width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+    #portfolio-projects h1{
+        font-size: 2rem;
+    }
+
+    #portfolio-projects p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .project-image .image-container .img .dpd-thumbnail{
+        max-width: 100%;
+    }
+
+    .project-image .image-container .img .ebook-thumbnail{
+        max-width: 90%;
+    }
+
+    .info .info-text p{
+        line-height: 1.3rem;
+    }
+
+    .project-image .image-container .img .wordpress-thumbnail{
+        max-width: 90%;
+    }
+}
